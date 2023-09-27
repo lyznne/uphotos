@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+/* ================================
+utility and root css
+=================================*/
+:root {
+  --primary-color: #0D0C22;
+  --secondary-color: #f4fbfd;
+  --tertiary-color: rgba(255, 255, 255, 0.8);
+  --shade-color: rgba(255, 255, 255, 0.5); 
+
+}
+
+.main_padding {
+  padding: 2rem 3rem;
+
+}
+
+.main_margin {
+  margin: 2rem 3rem;
+}

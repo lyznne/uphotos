@@ -1,0 +1,54 @@
+nav {
+    padding: 1rem 2rem;
+    backdrop-filter: blur(12px);
+    background-color: rgba(13, 12, 34, 0.02);
+    /* background: rgba(244, 251, 253, 0.2); */
+    position: relative;
+}
+
+nav::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+    content: "";
+    background-color: rgba(13, 12, 34, 0.03);
+    height: 2px;
+}
+
+nav .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .navbar .logo a {
+    font-size: 26px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+nav .navbar .logo a:hover {
+    color: lightslategray;
+}
+
+nav .navbar .github {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .navbar .github a {
+    font-size: 20px;
+    text-align: center;
+    padding-top: .4rem;
+}
+
+nav .navbar .github:hover {
+    background-color: rgba(119, 136, 153, 0.44);
+    /* color: darkslategrey; */
+}

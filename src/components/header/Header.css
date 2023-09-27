@@ -1,0 +1,33 @@
+header {
+    background: var(--primary-color);
+    width: 100%;
+    min-height: 50dvh;
+}
+
+header .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+header .header .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+header .header .text h1 {
+    font-size: 34px;
+    line-height: 46px;
+    color: var(--tertiary-color);
+
+}
+
+header .header .text p {
+    font-size: 17px;
+    line-height: 26px;
+    color: var(--shade-color);
+}

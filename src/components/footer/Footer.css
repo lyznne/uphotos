@@ -1,0 +1,71 @@
+footer {
+    background: var(--primary-color);
+    padding: 1rem 2rem;
+}
+footer .footer {
+    display: flex;
+    align-items: center; 
+
+
+}
+
+footer .footer .logo {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    flex: .5;
+}
+footer .footer .logo-heading h1 { 
+    font-size: 34px;
+    line-height: 46px;
+    color: var(--secondary-color);
+    margin-bottom: .5rem;
+
+}
+footer .footer .logo .about {
+    margin-bottom: .5rem;
+    color: var(--tertiary-color);
+}
+footer .footer .logo p {
+    font-size: 15px;color: var(--shade-color);
+}
+footer .footer .footer-links {
+    flex: 1;
+    margin-left: 2rem;
+}
+footer .footer .footer-links h1 {
+    font-size: 19px;
+    color: var(--tertiary-color);
+    text-transform: capitalize;
+    line-height: 24px;
+    margin-bottom: .4rem;
+}
+footer .footer .footer-links p {
+    font-size: 17px;
+    color: var(--shade-color);
+    text-transform: capitalize;
+}
+footer .footer .footer-links p:hover {
+    color: lavender;
+    text-decoration: underline;
+}
+.bottom-footer {
+    display: flex;
+    align-items: center;
+    padding-bottom: .5rem;
+    justify-content: space-between;
+}
+.bottom-footer  p {
+    letter-spacing: 1px; 
+    font-size: 16px;
+    /* text-transform: capitalize; */
+    color: var(--shade-color);
+}
+.bottom-footer  p:hover {
+    text-decoration: underline;
+}
+.bottom-footer .made a {
+    display: flex;
+    align-items: center; 
+    gap: 10px;
+}

@@ -1,0 +1,112 @@
+/* fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+
+
+/* Reset CSS */
+/* =============================================================================
+A simple CSS reset for better cross-browser consistency and default styling.
+========================================================================== */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+/* Remove list styles (bullets/numbers) */
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+
+/* Remove borders and paddings from images */
+img {
+  border: 0;
+  padding: 0;
+}
+
+/* Remove default input styles */
+input,
+button,
+textarea,
+select {
+  border: none;
+  outline: none;
+}
+
+/* Correct typographic defaults */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+
+button {
+  cursor: pointer;
+}
+
+/* ::-webkit-input-placeholder,
+:-ms-input-placeholder,
+::placeholder {
+  color: #ffffffb9;
+
+} */
+
+/* ================================
+media queries for screens 
+=================================*/
+
+/* small screens */ 
+@media screen and (max-width: 500px) {
+  .main_padding {
+    padding: 1rem 2rem;
+  
+  }
+  .main_margin {
+    margin: 1rem 2rem;
+  }
+  
+}
+
+/* medium screens */ 
+@media screen and (max-width: 768px) {
+  .main_padding {
+    padding: 2rem ;
+  
+  }
+  .main_margin {
+    margin: 2rem ;
+  }
+  
+}
+
+/* large screens */ 
+@media screen and (max-width: 968px) {
+  .main_padding {
+    padding: 1.5rem 3rem;
+  
+  }
+  .main_margin {
+    margin: 1.5rem 3rem;
+  }
+}
+
+
+/* ================================
+animations stylings 
+=================================*/
