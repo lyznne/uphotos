@@ -9,7 +9,7 @@
 }
 
 .search .input input {
-    padding: .5rem 2rem;
+    padding: .6rem 2rem;
     padding-right: 9.5rem;
     width: 100%;
     font-size: 17px;
@@ -33,6 +33,7 @@
 
 .search .input .icon {
     color: var(--secondary-color);
+    cursor: pointer;
 }
 
 .search .input .icon,
