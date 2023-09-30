@@ -23,11 +23,21 @@
     gap: 14px;
     overflow-x: scroll;
     overflow-y: hidden;
-}
-.photos .photos-top .topic::-webkit-scrollbar {
-    display: none;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+    /* -moz-appearance: menuimage; */
+
 }
 
+.photos .photos-top .topic::-webkit-scrollbar {
+    display: none;
+    width: 0 !important;
+}
+
+.photos .photos-top .topic {
+    scrollbar-width: none;
+    -ms-overflow-style: none; 
+}
 
 
 .photos .photos-top .topic .topic-content {

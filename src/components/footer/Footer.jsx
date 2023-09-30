@@ -13,7 +13,7 @@ const Footer = () => {
 
           <div className="about">
 
-            <p>explore the world of images and picure to your fullest.
+            <p>explore the world of images and picture to your fullest.
               Always leave a star if you like it
             </p>
           </div>
@@ -32,7 +32,7 @@ const Footer = () => {
       <div className="bottom-footer main_padding">
         <p>&copy; copyrights uphotos</p>
         <div className="made">
-          <a target='_blank' href="https://github.com/lyznne">
+          <a target='_blank' rel="noreferrer"  href="https://github.com/lyznne">
             <p>made by -</p>
             <span>enos</span>
             <div className="smile">

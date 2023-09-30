@@ -13,7 +13,8 @@ footer .footer .logo {
     display: flex;
     align-items: start;
     flex-direction: column;
-    flex: .5;
+    width: auto;
+    max-width: 400px;
 }
 footer .footer .logo-heading h1 { 
     font-size: 34px;
@@ -30,7 +31,7 @@ footer .footer .logo p {
     font-size: 15px;color: var(--shade-color);
 }
 footer .footer .footer-links {
-    flex: 1;
+    /* flex: 1; */
     margin-left: 2rem;
 }
 footer .footer .footer-links h1 {
@@ -55,13 +56,14 @@ footer .footer .footer-links p:hover {
     padding-bottom: .5rem;
     justify-content: space-between;
 }
-.bottom-footer  p {
+.bottom-footer  p , .bottom-footer span {
     letter-spacing: 1px; 
     font-size: 16px;
     /* text-transform: capitalize; */
     color: var(--shade-color);
 }
-.bottom-footer  p:hover {
+.bottom-footer  p:hover, 
+.bottom-footer span:hover {
     text-decoration: underline;
 }
 .bottom-footer .made a {

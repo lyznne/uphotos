@@ -21,7 +21,7 @@ const PhotosData = () => {
     const fetchPhotosData = async () => {
         try {
             const response = await axios.request(options);
-            // console.table(response.data);
+            console.table(response.data);
 
             return response.data;
 
@@ -52,11 +52,16 @@ const PhotosData = () => {
             <div className="photo-container">
                 {data.map((photo) => (
                     <div className="image" key={photo.id}>
-                        <div className="image-wrapper" >
-                            <img src={photo.urls.full} alt="" />
+                        <div className="image-wrapper">
+                            {isLoading ? (
+                                <img src={photo.blur_hash} alt="" />
+                            ) : (
+                                <img src={photo.urls.full} alt='' />
+                            )}
                         </div>
                     </div>
                 ))}
+
 
             </div>
         </div>
