@@ -106,11 +106,11 @@
     margin-bottom: 5px;
     overflow: hidden;
 }
-/* 
+
 .photo-container .image-wrapper .image-container:hover {
     -webkit-animation: kenburns-bottom 5s ease-in-out;
     animation: kenburns-bottom 5s ease-in-out;
-  } */
+  }
 
 .photo-container .image-wrapper {
     overflow: hidden;
