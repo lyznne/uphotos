@@ -2,6 +2,9 @@ import axios from 'axios';
 import React from 'react';
 import { useQuery } from 'react-query';
 import Topics from './Topics';
+import { BsDownload, BsFillHeartFill } from "react-icons/bs";
+
+
 
 const options = {
     method: "GET",
@@ -54,10 +57,27 @@ const PhotosData = () => {
                     <div className="image" key={photo.id}>
                         <div className="image-wrapper">
                             {isLoading ? (
-                                <img src={photo.blur_hash} alt="" />
+                                <div className="image-container">
+                                    <img src={photo.blur_hash} alt="" />
+                                </div>
                             ) : (
-                                <img src={photo.urls.full} alt='' />
+                                <div className="image-container">
+                                    <img src={photo.urls.full} alt='' />
+
+                                </div>
                             )}
+                            <div className="image-bottom">
+                                <div className="user">
+                                    <img src={photo.user.profile_image.medium} />
+                                    <a href={photo.user.portfolio_url} target='_black'>{photo.user.username}</a>
+                                </div>
+                                <div className="download">
+                                    <BsDownload />
+                                </div>
+                            </div>
+                            <div className="like-btn">
+                                <BsFillHeartFill />
+                            </div>
                         </div>
                     </div>
                 ))}
