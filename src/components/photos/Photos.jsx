@@ -1,18 +1,13 @@
 import React from 'react'
-import { QueryClient, QueryClientProvider } from 'react-query'
 import PhotosData from './PhotosData';
 import "./Photos.css"
 
 
-const queryClient = new QueryClient();
 
-const Photos = () => {
 
-  return (
-    <QueryClientProvider client={queryClient}>
-      <PhotosData />
-    </QueryClientProvider>
-  )
+const Photos = (props) => {
+
+  return  <PhotosData props={props}/>
 }
 
 export default Photos
