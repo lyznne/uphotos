@@ -1,35 +1,12 @@
 import axios from 'axios';
 import React from 'react';
 import { useQuery } from 'react-query';
+import fetchPhotosData from '../../utils/query';
 
-const options = {
-    method: 'GET',
-    url: `${process.env.REACT_APP_TOPICS_ENDPOINT}`,
-    headers: {
-        Authorization: `Client-ID ${process.env.REACT_APP_ACCESS_KEY}`,
-        accept: 'application/json',
-    }, 
-    params: {
-        per_page: 25
-    }
-    
-};
 
 const Topics = () => {
-    const fetchTopics = async () => {
-        try {
-            const response = await axios.request(options);
-            console.table(response.data);
 
-            return response.data;
-
-        } catch (error) {
-            console.error('Error fetching data: ', error);
-            throw error;
-        }
-    };
-
-    const { data, error, isLoading } = useQuery('topics', fetchTopics);
+    const { data, error, isLoading } = useQuery('topics', () => fetchPhotosData('topics'));
 
     if (isLoading) return 'Loading ....';
     if (error) return 'An error has occurred: ' + error.message;
