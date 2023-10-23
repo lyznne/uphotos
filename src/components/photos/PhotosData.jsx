@@ -9,6 +9,7 @@ const PhotosData = ({props}) => {
 
 // console.log("search result props",props.data.results)
   const { data, error, isLoading } = useQuery('photos', () => fetchPhotosData('photos'));
+  console.log("data ==> ", data )
 
 console.log(data)
     if (isLoading) return 'Loading ....';
